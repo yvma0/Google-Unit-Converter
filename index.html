@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Unit Converter</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main id="wrapper">
+        <div class="container">
+            <select class = "row1">
+                <option value="temperature" selected>Temperature</option>
+                <option value="distance">Distance</option>
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="time">Time</option> 
+            </select>
+
+            <div class = "row2">
+                <div>
+                    <input type="number" id="value1" value="212">
+                    <select id="unit1">
+                        <option value="f">Fahrenheit</option>
+                    </select>
+                </div>
+                <div class="equals">
+                    =
+                </div>
+                <div>
+                    <input type="number" id="value2" value="100">
+                    <select id="unit2">
+                        <option value="c">Celsius</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="formula">Formula</div> <div id="formula">F = C * 9/5 + 32</div>
+        </div>
+    </main>
+
+    <script src="js/unit-converter.js"></script>
+</body>
+</html>
